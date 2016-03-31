@@ -1,11 +1,10 @@
+/*************************************************************************
+ * General CSS
+ */
+
 body {
 	background-color: #312E29;
 	font-family: sans-serif;
-}
-
-.bg-1 {
-	background-color: white;
-	border-radius: 4px;
 }
 
 .container {
@@ -13,6 +12,11 @@ body {
 	padding-right: 0px;
 	margin-top: 26px;
 	
+}
+
+.bg-1 {
+	background-color: white;
+	border-radius: 4px;
 }
 
 .container .jumbotron {
@@ -23,20 +27,16 @@ body {
 	padding: 26px 41px 25px 41px;
 }
 
+/*************************************************************************
+ * Header
+ */
+
 h2 {
 	margin-top: 38px;
 	margin-bottom: -10px;
 }
 
-h3 {
-	font-weight: bold;
-}
-
-.jumbotron .description {
-	font-size: 15px;
-}
-
-.style-me {
+.logo {
 	font-size:46px;
 	font-family:sans-serif;
 	font-weight: bold;
@@ -48,14 +48,8 @@ h3 {
     transform:scale(-1,1);
 }
 
-i {
-    -webkit-transform: scale(-1,1);
-    transform:scale(-1,1);
-    margin-right: 15px;
-}
-
 hr {
-	width: 11%;
+	width: 129px;
 	margin-top: -9px;
 	margin-bottom: 4px;
 	border-top: 1px solid #333;
@@ -78,6 +72,16 @@ hr {
     right: 41px;
 }
 
+i {
+    -webkit-transform: scale(-1,1);
+    transform:scale(-1,1);
+    margin-right: 15px;
+}
+
+/*************************************************************************
+ * CONTENT
+ */
+
 .content {
 	background-color: white;
 	border-top: 3px solid #A9DD65;
@@ -86,22 +90,30 @@ hr {
 
 }
 
+h3 {
+	font-weight: bold;
+}
+
+.jumbotron .description {
+	font-size: 15px;
+}
+
 .control-label {
 	color: #6C6865;
 }
 
-.type-in {
-	outline: none;
+input {
+	outline: none !important;
 	border-top: 0 solid white !important;
 	border-right: 0 solid white !important;
 	border-left: 0 solid white !important;
 	box-shadow: none !important;
-	border-radius: 0px;
-	padding: 6px 0px;
-	width: 400px;
+	border-radius: 0px !important;
+	padding: 6px 0px !important;
+	width: 400px !important;
 }
-.form-group .btn {
 
+.form-group .btn {
 	margin-top: 23px;
 }
 
@@ -123,6 +135,10 @@ hr {
 	border: 1px solid #D8D8D8;
     box-shadow: 0px 2px 2px 0px #C3C3C3;
 }
+
+/*************************************************************************
+ * FOOTER PROGRESS BAR
+ */
 
 .progress {
     margin-top: 23px;
@@ -204,12 +220,15 @@ hr {
 	width: 26%;
 }
 
-
 .spacing {
 	margin-left: -2%;
 }
 
- ul {
+/*************************************************************************
+ * FOOTER MENU
+ */
+
+ul {
 	color: #B5B5B5;
 	padding-right: -15px;
 
@@ -231,6 +250,10 @@ hr {
 	padding-right: 0;
 }
 
+/*************************************************************************
+ * COPYRIGHT
+ */
+
 .copyright {
 	color: #76726c;
 	font-size: 14px;
@@ -248,8 +271,8 @@ hr {
     	padding: 8px 24px 8px 12px;
 	}
 
-	.type-in {
-		width: 100%;
+	input {
+		width: 100% !important;
 	}
 
     .footer-mobile li {
